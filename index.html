@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
@@ -13,31 +14,34 @@
         <button class="main-navigation__toggle" type="button">
           <span class="visually-hidden">Кнопка меню</span>
         </button>
-        <ul class="main-navigation__list page-sections">
-          <li class="page-sections__item">
-            <a href="#yoga-space">О YogaSpace</a>
-          </li>
-          <li class="page-sections__item">
-            <a href="#schedule">Расписание</a>
-          </li>
-          <li class="page-sections__item">
-            <a href="#teachers">Преподаватели</a>
-          </li>
-          <li class="page-sections__item">
-            <a href="#contacts">Контакты</a>
-          </li>
-        </ul>
-        <div class="promo-yoga">
-          <p class="promo-yoga__slogan">Почувствуй расслабление в своем теле</p>
-          <div class="promo-yoga__logo">YOGA</div>
-          <a class="promo-yoga__action" href="#">
-            <p>Запишитесь на бесплатное пробное занятие</p>
-          </a>
-          <a class="promo-yoga__phone-number" href="tel:8 (812) 690-10-10">8 (812) 690-10-10</a>
+        <!-- Выпадающий список -->
+        <div class="dropdown">
+          <ul class="main-navigation__list page-sections">
+            <li class="page-sections__item">
+              <a href="#yoga-space">О YogaSpace</a>
+            </li>
+            <li class="page-sections__item">
+              <a href="#schedule">Расписание</a>
+            </li>
+            <li class="page-sections__item">
+              <a href="#teachers">Преподаватели</a>
+            </li>
+            <li class="page-sections__item">
+              <a href="#contacts">Контакты</a>
+            </li>
+          </ul>
         </div>
+        <a class="main-navigation__phone-number" href="tel:8 (812) 690-10-10">8 (812) 690-10-10</a>
       </nav>
     </header>
     <main class="page-main">
+      <div class="promo-yoga">
+        <p class="promo-yoga__slogan">Почувствуй расслабление в своем теле</p>
+        <div class="promo-yoga__logo">YOGA</div>
+        <a class="promo-yoga__action" href="#">
+          <p>Запишитесь на бесплатное пробное занятие</p>
+        </a>
+      </div>
       <h1 class="visually-hidden">Пространство YogaSpace</h1>
       <section class="types">
         <h2 class="types__title page-title">Направления</h2>
