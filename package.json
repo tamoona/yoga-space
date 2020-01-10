@@ -1,0 +1,25 @@
+{
+  "name": "yoga-space",
+  "version": "1.0.0",
+  "description": "Yoga studio landing page",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tamoona/yoga-space.git"
+  },
+  "author": "Anastasia Alimpieva",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tamoona/yoga-space/issues"
+  },
+  "homepage": "https://github.com/tamoona/yoga-space#readme",
+  "dependencies": {
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "start": "gulp start"
+  }
+}

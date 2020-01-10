@@ -5,14 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
   </head>
   <body>
     <header class="main-header">
       <nav class="main-navigation">
         <button class="main-navigation__toggle" type="button">
-          <span class="visually-hidden">Кнопка меню</span>
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 150" width="20" height="20" style="enable-background:new 0 0 150 150;" xml:space="preserve">
+            <g id="XMLID_240_">
+              <path id="XMLID_241_" d="M15,30h120c8.284,0,15-6.716,15-15s-6.716-15-15-15H15C6.716,0,0,6.716,0,15S6.716,30,15,30z" />
+              <path id="XMLID_242_" d="M135,60H15C6.716,60,0,66.716,0,75s6.716,15,15,15h120c8.284,0,15-6.716,15-15S143.284,60,135,60z" />
+              <path id="XMLID_243_" d="M135,120H15c-8.284,0-15,6.716-15,15s6.716,15,15,15h120c8.284,0,15-6.716,15-15S143.284,120,135,120z" />
+            </g>
+          </svg>
         </button>
         <!-- Выпадающий список -->
         <div class="dropdown">
@@ -36,45 +42,71 @@
     </header>
     <main class="page-main">
       <div class="promo-yoga">
-        <p class="promo-yoga__slogan">Почувствуй расслабление в своем теле</p>
-        <div class="promo-yoga__logo">YOGA</div>
-        <a class="promo-yoga__action" href="#">
-          <p>Запишитесь на бесплатное пробное занятие</p>
-        </a>
+        <div class="promo-yoga__wrapper">
+          <p class="promo-yoga__slogan">Почувствуй расслабление в своем теле</p>
+          <div class="promo-yoga__logo">YOGA</div>
+          <a class="promo-yoga__action" href="#">
+            <div class="promo-yoga__button">
+              <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 240.835 240.835" width="10" height="15" style="enable-background:new 0 0 240.835 240.835;" xml:space="preserve">
+                <g>
+                  <path
+                    id="Expand_Less"
+                    d="M129.007,57.819c-4.68-4.68-12.499-4.68-17.191,0L3.555,165.803c-4.74,4.74-4.74,12.427,0,17.155
+		c4.74,4.74,12.439,4.74,17.179,0l99.683-99.406l99.671,99.418c4.752,4.74,12.439,4.74,17.191,0c4.74-4.74,4.74-12.427,0-17.155
+		L129.007,57.819z"
+                  />
+                </g>
+              </svg>
+            </div>
+            <p>Запишитесь на бесплатное пробное занятие</p>
+          </a>
+        </div>
       </div>
       <h1 class="visually-hidden">Пространство YogaSpace</h1>
       <section class="types">
         <h2 class="types__title page-title">Направления</h2>
         <ul class="types__list">
           <li class="types__item">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/desktop/hathaYoga-desktop@1x.png 1x, img/desktop/hathaYoga-desktop@2x.png 2x" />
-              <source media="(min-width: 768px)" srcset="img/tablet/hathaYoga-tablet@1x.png 1x, img/tablet/hathaYoga-tablet@2x.png 2x" />
-              <img src="img/mobile/hathaYoga-mobile@1x.png" srcset="img/mobile/hathaYoga-mobile@2x.png 2x" alt="фотография-пример занятий Хатха-йогой" class="types__photo" width="250" height="200" />
-            </picture>
-            <h3 class="types__subtitle">Хатха-йога</h3>
-            <p>Пн, Ср, Пт – с 12:00 до 15:00 Вт, Чт – с 18:00 до 21:00</p>
-            <a class="types__instructor" href="#">Инструктор Емельянова Полина</a>
+            <div class="types__image">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="assets/img/desktop/hathaYoga-desktop@1x.png 1x, assets/img/desktop/hathaYoga-desktop@2x.png 2x" />
+                <source media="(min-width: 768px)" srcset="assets/img/tablet/hathaYoga-tablet@1x.png 1x, assets/img/tablet/hathaYoga-tablet@2x.png 2x" />
+                <img src="assets/img/mobile/hathaYoga-mobile@1x.png" srcset="assets/img/mobile/hathaYoga-mobile@2x.png 2x" alt="фотография-пример занятий Хатха-йогой" class="types__photo" width="250" height="200" />
+              </picture>
+            </div>
+            <div class="types__wrapper">
+              <h3 class="types__subtitle">Хатха-йога</h3>
+              <p>Пн, Ср, Пт – с 12:00 до 15:00 Вт, Чт – с 18:00 до 21:00</p>
+              <a class="types__instructor" href="#">Инструктор Емельянова Полина</a>
+            </div>
           </li>
           <li class="types__item">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/desktop/ashtangaYoga-desktop@1x.png 1x, img/desktop/ashtangaYoga-desktop@2x.png 2x" />
-              <source media="(min-width: 768px)" srcset="img/tablet/ashtangaYoga-tablet@1x.png 1x, img/tablet/ashtangaYoga-tablet@2x.png 2x" />
-              <img src="img/mobile/ashtangaYoga-mobile@1x.png" srcset="img/mobile/ashtangaYoga-mobile@2x.png 2x" alt="фотография-пример занятий Ашатанга-йогой" class="types__photo" width="250" height="200" />
-            </picture>
-            <h3 class="types__subtitle">Ашатанга-йога</h3>
-            <p>Пн, Ср, Пт – с 11:00 до 14:00 Вт, Чт – с 19:00 до 21:00</p>
-            <a class="types__instructor" href="#">Инструктор Муравьёва Ярослава</a>
+            <div class="types__image">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="assets/img/desktop/ashtangaYoga-desktop@1x.png 1x, assets/img/desktop/ashtangaYoga-desktop@2x.png 2x" />
+                <source media="(min-width: 768px)" srcset="assets/img/tablet/ashtangaYoga-tablet@1x.png 1x, assets/img/tablet/ashtangaYoga-tablet@2x.png 2x" />
+                <img src="assets/img/mobile/ashtangaYoga-mobile@1x.png" srcset="assets/img/mobile/ashtangaYoga-mobile@2x.png 2x" alt="фотография-пример занятий Ашатанга-йогой" class="types__photo" width="250" height="200" />
+              </picture>
+            </div>
+            <div class="types__wrapper">
+              <h3 class="types__subtitle">Ашатанга-йога</h3>
+              <p>Пн, Ср, Пт – с 11:00 до 14:00 Вт, Чт – с 19:00 до 21:00</p>
+              <a class="types__instructor" href="#">Инструктор Муравьёва Ярослава</a>
+            </div>
           </li>
           <li class="types__item">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/desktop/kundaliniYoga-desktop@1x.png 1x, img/desktop/kundaliniYoga-desktop@2x.png 2x" />
-              <source media="(min-width: 768px)" srcset="img/tablet/kundaliniYoga-tablet@1x.png 1x, img/tablet/kundaliniYoga-tablet@2x.png 2x" />
-              <img src="img/mobile/kundaliniYoga-mobile@1x.png" srcset="img/mobile/kundaliniYoga-mobile@2x.png 2x" alt="фотография-пример занятий Кундалини-йогой" class="types__photo" width="250" height="200" />
-            </picture>
-            <h3 class="types__subtitle">Кундалини-йога</h3>
-            <p>Пн, Ср, Пт – с 12:00 до 15:00 Вт, Чт – с 18:00 до 21:00</p>
-            <a class="types__instructor" href="#">Инструктор Савельев Макар</a>
+            <div class="types__image">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="assets/img/desktop/kundaliniYoga-desktop@1x.png 1x, assets/img/desktop/kundaliniYoga-desktop@2x.png 2x" />
+                <source media="(min-width: 768px)" srcset="assets/img/tablet/kundaliniYoga-tablet@1x.png 1x, assets/img/tablet/kundaliniYoga-tablet@2x.png 2x" />
+                <img src="assets/img/mobile/kundaliniYoga-mobile@1x.png" srcset="assets/img/mobile/kundaliniYoga-mobile@2x.png 2x" alt="фотография-пример занятий Кундалини-йогой" class="types__photo" width="250" height="200" />
+              </picture>
+            </div>
+            <div class="types__wrapper">
+              <h3 class="types__subtitle">Кундалини-йога</h3>
+              <p>Пн, Ср, Пт – с 12:00 до 15:00 Вт, Чт – с 18:00 до 21:00</p>
+              <a class="types__instructor" href="#">Инструктор Савельев Макар</a>
+            </div>
           </li>
         </ul>
         <a class="types__button" href="#">Смотреть больше</a>
@@ -120,7 +152,7 @@
             <li class="instructors__item">
               <div class="instructors__wrapper">
                 <a href="#">
-                  <img src="img/instructors/instructor-1.jpg" width="82" height="82" alt="Инструктор" />
+                  <img src="assets/img/instructors/instructor-1.jpg" width="82" height="82" alt="Инструктор" />
                 </a>
                 <h3 class="instructors__name">Инструктор Емельянова Полина</h3>
                 <h4 class="instructors__type">Хатха-йога</h4>
@@ -137,7 +169,7 @@
             <li class="instructors__item">
               <div class="instructors__wrapper">
                 <a href="#">
-                  <img src="img/instructors/instructor-2.jpeg" width="82" height="82" alt="Инструктор" />
+                  <img src="assets/img/instructors/instructor-2.jpeg" width="82" height="82" alt="Инструктор" />
                 </a>
                 <h3 class="instructors__name">Инструктор Муравьёва Ярослава</h3>
                 <h4 class="instructors__type">Хатха-йога</h4>
@@ -154,7 +186,7 @@
             <li class="instructors__item">
               <div class="instructors__wrapper">
                 <a href="#">
-                  <img src="img/instructors/instructor-3.jpeg" width="82" height="82" alt="Инструктор" />
+                  <img src="assets/img/instructors/instructor-3.jpeg" width="82" height="82" alt="Инструктор" />
                 </a>
                 <h3 class="instructors__name">Инструктор Яловой Вениамин</h3>
                 <h4 class="instructors__type">Хатха-йога</h4>
@@ -187,7 +219,7 @@
             Хожу на йогу вечером, чтобы расслабиться после тяжелого трудового дня. И после занятий наступает спокойствие! Йога это отличный способ быстро и качественно расслабиться. Спасибо инструктору Марине.
           </p>
           <a href="#">
-            <img class="review__picture" src="img/instructors/instructor-6.png" width="52" height="51" alt="Ревьюер" />
+            <img class="review__picture" src="assets/img/instructors/instructor-6.png" width="52" height="51" alt="Ревьюер" />
           </a>
           <p class="review__author">Серёжа Попов</p>
           <p class="review__date">16 мая 2018</p>
