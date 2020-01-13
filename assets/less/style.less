@@ -1,0 +1,331 @@
+@font-face {
+  font-family: Geometria;
+  src: url("../fonts/geometria-webfont.woff2") format("woff2"), url("../fonts/geometria-webfont.woff") format("woff"), url("../fonts/geometria-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Geometria Bold";
+  src: url("../fonts/geometria-bold-webfont.woff2") format("woff2"), url("../fonts/geometria-bold-webfont.woff") format("woff"), url("../fonts/geometria-bold-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Caveat;
+  src: url("../fonts/caveat-regular-webfont.woff2") format("woff2"), url("../fonts/geometria-bold-webfont.woff") format("woff"), url("../fonts/geometria-bold-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Geometria, Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  line-height: 15px;
+  color: #8e80a9;
+
+  background-color: #fcf8fe;
+  background-image: url("../img/mobile/clouds-pattern-mobile@1x.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.main-navigation__list,
+.types__list,
+.membership__period-list,
+.membership__types,
+.instructors,
+.main-footer__contacts,
+.social-media__item {
+  list-style: none;
+  padding-left: 0;
+}
+
+.dropdown a {
+  color: #8e80a9;
+}
+
+.dropdown a:hover,
+.dropdown a:focus {
+  color: #660066;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  padding-top: 5px;
+  z-index: 1;
+  text-align: left;
+}
+
+.main-navigation__toggle svg {
+  padding: 0;
+  fill: #8e80a9;
+  padding-top: 19px;
+  padding-left: 15px;
+}
+
+.main-navigation__toggle::before {
+  content: "";
+  position: absolute;
+}
+
+.main-navigation__toggle {
+  background: transparent;
+}
+
+button {
+  border: 0;
+  padding: 0;
+}
+
+.main-navigation__phone-number {
+  position: absolute;
+  width: 104px;
+  height: 7px;
+  left: 201px;
+  top: 23px;
+  font-size: 12px;
+}
+
+.promo-yoga__action,
+.types__instructor,
+.membership__period-list a {
+  color: #e65c7b;
+}
+
+.promo-yoga__logo {
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.26em;
+  font-size: 67px;
+  font-weight: 700;
+  line-height: 0px;
+  color: #ffffff;
+  text-shadow: 0px 4px 50px rgba(131, 115, 161, 0.6);
+  padding-top: 17px;
+  padding-bottom: 27px;
+}
+
+.promo-yoga__action p {
+  font-size: 10px;
+  line-height: 12px;
+  margin: 0;
+  margin-left: 7px;
+}
+
+.promo-yoga__action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  margin-top: 15px;
+  margin-right: 20px;
+  margin-left: 50px;
+}
+
+.promo-yoga__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 26px;
+  background-color: #e65c7b;
+}
+
+.promo-yoga__button svg {
+  transform: rotate(90deg);
+  fill: #ffffff;
+  margin-left: 2px;
+}
+
+.main-navigation__phone-number {
+  color: #8e80a9;
+}
+
+.page-main h1 {
+  visibility: hidden;
+}
+
+.types__button {
+  color: #8e80a9;
+}
+
+.membership__button {
+  color: #ffffff;
+}
+
+.social-media__item a {
+  color: #8e80a9;
+}
+
+.promo-yoga__slogan {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  font-family: Caveat, "Open Sans", sans-serif;
+  font-size: 18px;
+  width: 233px;
+  height: 12px;
+}
+
+.promo-yoga {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 24px 40px 44px;
+  left: 44px;
+  top: 100px;
+}
+
+.visually-hidden {
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+.types {
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url("../img/mobile/big-pattern-mobile@1x.png");
+  background-position: 0 0;
+  padding-left: 35px;
+  padding-right: 35px;
+  background-repeat: no-repeat;
+}
+
+.types__wrapper {
+  display: flex;
+  text-align: start;
+  background-color: #ffffff;
+  width: 100%;
+  margin: 0;
+}
+
+.types__content {
+  flex: 1;
+  padding: 20px;
+}
+
+.types__content p {
+  margin: 10px 0 10px 0;
+}
+
+.types__item {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.types__list {
+  margin: 0;
+}
+
+.types__item img {
+  vertical-align: bottom;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.types__title {
+  font-size: 18px;
+  text-align: center;
+  margin-left: 65px;
+}
+
+.types__subtitle {
+  font-size: 12px;
+  line-height: 0px;
+  margin: 0;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+
+.types__instructor {
+  padding-right: inherit;
+}
+
+.types-instructor__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 43px;
+  background-color: #8e80a9;
+}
+
+.types-instructor__button svg {
+  transform: rotate(90deg);
+  fill: #ffffff;
+}
+
+.membership {
+  background-image: url("../img/mobile/clouds-membership-pattern@1x.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.button {
+  font: inherit;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  background-color: #8e80a9;
+  border: none;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: #e65c7b;
+}
+
+.form-request__title {
+  font-size: 20px;
+  line-height: 27px;
+  color: #8e80a9;
+}
+
+.form-request__input {
+  font: inherit;
+  font-size: 14px;
+  line-height: 20px;
+  color: #c8c0db;
+  background-color: inherit;
+  border: 0;
+  border-bottom: 1px solid #8e80a9;
+  text-decoration: underline;
+  padding-bottom: 15px;
+}
+
+.main-footer__form {
+  background-image: url("../img/mobile/yoga-futer-mobile@1x.png");
+}
+
+.main-footer {
+  background-color: #8373a1;
+  color: #ffffff;
+}
+
+.main-footer__copyright,
+.main-footer__copyright a {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.main-footer__copyright a:hover,
+.main-footer__copyright a:focus {
+  color: #ffffff;
+}
