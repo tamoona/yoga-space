@@ -3,6 +3,13 @@
 const gulp = require("gulp");
 const server = require("browser-sync").create();
 const del = require("del");
+const plumber = require("gulp-plumber");
+const sourcemap = require("gulp-sourcemaps");
+const less = require("gulp-less");
+const postcss = require("gulp-postcss");
+const autoprefixer = require("autoprefixer");
+const csso = require("gulp-csso");
+const rename = require("gulp-rename");
 
 gulp.task("refresh", function(done) {
   server.reload();
@@ -18,7 +25,7 @@ gulp.task("server", function() {
     ui: false
   });
 
-  gulp.watch("assets/css/**/*.css", gulp.series("copy:css", "refresh"));
+  gulp.watch("assets/less/**/*.less", gulp.series("css", "refresh"));
   gulp.watch("*.html", gulp.series("copy:html", "refresh"));
 });
 
@@ -26,12 +33,19 @@ gulp.task("copy:html", function() {
   return gulp.src("*.html").pipe(gulp.dest("build"));
 });
 
-gulp.task("copy:css", function() {
+gulp.task("css", function() {
   return gulp
-    .src(["assets/css/**"], {
-      base: "assets"
-    })
-    .pipe(gulp.dest("build/assets"));
+    .src("assets/less/main.less")
+    .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(less())
+    .pipe(postcss([autoprefixer()]))
+    .pipe(rename("style.css"))
+    .pipe(gulp.dest("build/assets/css"))
+    .pipe(csso())
+    .pipe(rename("style.min.css"))
+    .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("build/assets/css"));
 });
 
 gulp.task("copy:assets", function() {
@@ -46,5 +60,5 @@ gulp.task("clean", function() {
   return del("build");
 });
 
-gulp.task("build", gulp.series("clean", "copy:assets", "copy:css", "copy:html"));
+gulp.task("build", gulp.series("clean", "copy:assets", "css", "copy:html"));
 gulp.task("start", gulp.series("build", "server"));
