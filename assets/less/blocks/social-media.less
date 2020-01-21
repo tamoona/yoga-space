@@ -1,7 +1,31 @@
 .social-media {
   .plain-list();
+  display: flex;
+  flex-direction: column;
+  margin: 17px 11px 0 11px;
 }
 
-.social-media__item a {
-  color: #8e80a9;
+.social-media__item {
+  margin-bottom: 6px;
+}
+
+.social-media__link {
+  display: inline-block;
+  svg {
+    fill: #8b7eac;
+  }
+
+  &--vk {
+    svg {
+      width: 17px;
+      height: 20px;
+    }
+  }
+
+  &--tw {
+    svg {
+      width: 15px;
+      height: 18px;
+    }
+  }
 }

@@ -11,7 +11,7 @@
     <header class="page-header">
       <nav class="main-navigation">
         <button class="main-navigation__toggle" type="button">
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 150" width="20" height="20" style="enable-background:new 0 0 150 150;" xml:space="preserve">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 150" width="20" height="20" xml:space="preserve">
             <g id="XMLID_240_">
               <path id="XMLID_241_" d="M15,30h120c8.284,0,15-6.716,15-15s-6.716-15-15-15H15C6.716,0,0,6.716,0,15S6.716,30,15,30z" />
               <path id="XMLID_242_" d="M135,60H15C6.716,60,0,66.716,0,75s6.716,15,15,15h120c8.284,0,15-6.716,15-15S143.284,60,135,60z" />
@@ -82,7 +82,7 @@
                   Емельянова Полина</a
                 >
               </div>
-              <div class="types-instructor__button">
+              <div class="types__button-more">
                 <a href="#">
                   <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 240.835 240.835" width="10" height="15" style="enable-background:new 0 0 240.835 240.835;" xml:space="preserve">
                     <g>
@@ -115,7 +115,7 @@
                   Муравьёва Ярослава</a
                 >
               </div>
-              <div class="types-instructor__button">
+              <div class="types__button-more">
                 <a href="#">
                   <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 240.835 240.835" width="10" height="15" style="enable-background:new 0 0 240.835 240.835;" xml:space="preserve">
                     <g>
@@ -148,7 +148,7 @@
                   Савельев Макар</a
                 >
               </div>
-              <div class="types-instructor__button">
+              <div class="types__button-more">
                 <a href="#">
                   <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 240.835 240.835" width="10" height="15" style="enable-background:new 0 0 240.835 240.835;" xml:space="preserve">
                     <g>
@@ -165,7 +165,7 @@
             </div>
           </li>
         </ul>
-        <a class="types__button" href="#">Смотреть больше</a>
+        <a class="types__button-all visually-hidden" href="#">Смотреть больше</a>
       </section>
       <section class="membership">
         <h2 class="membership__title page-title">Абонементы</h2>
@@ -183,7 +183,10 @@
         <ul class="membership__types">
           <li class="membership__type">
             <h4 class="membership__subtitle">Утро</h4>
-            <p>Посещение с 11:00 до 16:00</p>
+            <p>
+              Посещение <br />
+              с 11:00 до 16:00
+            </p>
             <span class="membership__price">1 300 Р</span>
             <button class="membership__button button">Заказать абонемент</button>
           </li>
@@ -195,7 +198,10 @@
           </li>
           <li class="membership__type">
             <h4 class="membership__subtitle">Вечер</h4>
-            <p>Посещение с 17:00 до 21:00</p>
+            <p>
+              Посещение <br />
+              с 17:00 до 21:00
+            </p>
             <span class="membership__price">2 000 Р</span>
             <button class="membership__button button">Заказать абонемент</button>
           </li>
@@ -203,21 +209,60 @@
       </section>
       <section class="team">
         <h2 class="team__title page-title">Наша команда</h2>
-        <div class="team__instructors">
-          <ul class="instructors">
+        <div class="team__instructors instructors">
+          <ul class="instructors__list">
             <li class="instructors__item">
               <div class="instructors__wrapper">
                 <a href="#">
                   <img src="assets/img/instructors/instructor-1.jpg" width="82" height="82" alt="Инструктор" />
                 </a>
-                <h3 class="instructors__name">Инструктор Емельянова Полина</h3>
-                <h4 class="instructors__type">Хатха-йога</h4>
+                <div class="instructors__content">
+                  <h3 class="instructors__name">Инструктор Емельянова Полина</h3>
+                  <h4 class="instructors__type">Хатха-йога</h4>
+                </div>
                 <ul class="instructors__social-media social-media">
                   <li class="social-media__item">
-                    <a class="social-media__link" href="#">VK</a>
+                    <a class="social-media__link social-media__link--vk" href="#">
+                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 511.962 511.962" width="16" height="10" style="enable-background:new 0 0 511.962 511.962;" xml:space="preserve">
+                        <g>
+                          <g>
+                            <path
+                              d="M507.399,370.471c-1.376-2.304-9.888-20.8-50.848-58.816c-42.88-39.808-37.12-33.344,14.528-102.176
+                         c31.456-41.92,44.032-67.52,40.096-78.464c-3.744-10.432-26.88-7.68-26.88-7.68l-76.928,0.448c0,0-5.696-0.768-9.952,1.76
+                         c-4.128,2.496-6.784,8.256-6.784,8.256s-12.192,32.448-28.448,60.032c-34.272,58.208-48,61.28-53.6,57.664
+                         c-13.024-8.416-9.76-33.856-9.76-51.904c0-56.416,8.544-79.936-16.672-86.016c-8.384-2.016-14.528-3.36-35.936-3.584
+                         c-27.456-0.288-50.72,0.096-63.872,6.528c-8.768,4.288-15.52,13.856-11.392,14.4c5.088,0.672,16.608,3.104,22.72,11.424
+                         c7.904,10.72,7.616,34.848,7.616,34.848s4.544,66.4-10.592,74.656c-10.4,5.664-24.64-5.888-55.2-58.72
+                         c-15.648-27.04-27.488-56.96-27.488-56.96s-2.272-5.568-6.336-8.544c-4.928-3.616-11.84-4.768-11.84-4.768l-73.152,0.448
+                         c0,0-10.976,0.32-15.008,5.088c-3.584,4.256-0.288,13.024-0.288,13.024s57.28,133.984,122.112,201.536
+                         c59.488,61.92,127.008,57.856,127.008,57.856h30.592c0,0,9.248-1.024,13.952-6.112c4.352-4.672,4.192-13.44,4.192-13.44
+                         s-0.608-41.056,18.464-47.104c18.784-5.952,42.912,39.68,68.48,57.248c19.328,13.28,34.016,10.368,34.016,10.368l68.384-0.96
+                         C488.583,400.807,524.359,398.599,507.399,370.471z"
+                            />
+                          </g>
+                        </g>
+                      </svg>
+                    </a>
                   </li>
-                  <li class="social-media__item">
-                    <a class="social-media__link" href="#">Twitter</a>
+                  <li class="social-media__item ">
+                    <a class="social-media__link social-media__link--tw" href="#">
+                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" width="16" height="10" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                        <g>
+                          <g>
+                            <path
+                              d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+			c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+			c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+			c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+			c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+			c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+			C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+			C480.224,136.96,497.728,118.496,512,97.248z"
+                            />
+                          </g>
+                        </g>
+                      </svg>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -227,14 +272,53 @@
                 <a href="#">
                   <img src="assets/img/instructors/instructor-2.jpeg" width="82" height="82" alt="Инструктор" />
                 </a>
-                <h3 class="instructors__name">Инструктор Муравьёва Ярослава</h3>
-                <h4 class="instructors__type">Хатха-йога</h4>
+                <div class="instructors__content">
+                  <h3 class="instructors__name">Инструктор Мурати Ярослава</h3>
+                  <h4 class="instructors__type">Хатха-йога</h4>
+                </div>
                 <ul class="instructors__social-media social-media">
                   <li class="social-media__item">
-                    <a class="social-media__link" href="#">VK</a>
+                    <a class="social-media__link social-media__link--vk" href="#">
+                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 511.962 511.962" width="16" height="10" style="enable-background:new 0 0 511.962 511.962;" xml:space="preserve">
+                        <g>
+                          <g>
+                            <path
+                              d="M507.399,370.471c-1.376-2.304-9.888-20.8-50.848-58.816c-42.88-39.808-37.12-33.344,14.528-102.176
+                         c31.456-41.92,44.032-67.52,40.096-78.464c-3.744-10.432-26.88-7.68-26.88-7.68l-76.928,0.448c0,0-5.696-0.768-9.952,1.76
+                         c-4.128,2.496-6.784,8.256-6.784,8.256s-12.192,32.448-28.448,60.032c-34.272,58.208-48,61.28-53.6,57.664
+                         c-13.024-8.416-9.76-33.856-9.76-51.904c0-56.416,8.544-79.936-16.672-86.016c-8.384-2.016-14.528-3.36-35.936-3.584
+                         c-27.456-0.288-50.72,0.096-63.872,6.528c-8.768,4.288-15.52,13.856-11.392,14.4c5.088,0.672,16.608,3.104,22.72,11.424
+                         c7.904,10.72,7.616,34.848,7.616,34.848s4.544,66.4-10.592,74.656c-10.4,5.664-24.64-5.888-55.2-58.72
+                         c-15.648-27.04-27.488-56.96-27.488-56.96s-2.272-5.568-6.336-8.544c-4.928-3.616-11.84-4.768-11.84-4.768l-73.152,0.448
+                         c0,0-10.976,0.32-15.008,5.088c-3.584,4.256-0.288,13.024-0.288,13.024s57.28,133.984,122.112,201.536
+                         c59.488,61.92,127.008,57.856,127.008,57.856h30.592c0,0,9.248-1.024,13.952-6.112c4.352-4.672,4.192-13.44,4.192-13.44
+                         s-0.608-41.056,18.464-47.104c18.784-5.952,42.912,39.68,68.48,57.248c19.328,13.28,34.016,10.368,34.016,10.368l68.384-0.96
+                         C488.583,400.807,524.359,398.599,507.399,370.471z"
+                            />
+                          </g>
+                        </g>
+                      </svg>
+                    </a>
                   </li>
                   <li class="social-media__item">
-                    <a class="social-media__link" href="#">Twitter</a>
+                    <a class="social-media__link social-media__link--tw" href="#">
+                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" width="16" height="10" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                        <g>
+                          <g>
+                            <path
+                              d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+			c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+			c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+			c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+			c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+			c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+			C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+			C480.224,136.96,497.728,118.496,512,97.248z"
+                            />
+                          </g>
+                        </g>
+                      </svg>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -244,22 +328,81 @@
                 <a href="#">
                   <img src="assets/img/instructors/instructor-3.jpeg" width="82" height="82" alt="Инструктор" />
                 </a>
-                <h3 class="instructors__name">Инструктор Яловой Вениамин</h3>
-                <h4 class="instructors__type">Хатха-йога</h4>
+                <div class="instructors__content">
+                  <h3 class="instructors__name">Инструктор Яловой Вениамин</h3>
+                  <h4 class="instructors__type">Хатха-йога</h4>
+                </div>
                 <ul class="instructors__social-media social-media">
                   <li class="social-media__item">
-                    <a class="social-media__link" href="#">VK</a>
+                    <a class="social-media__link social-media__link--vk" href="#">
+                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 511.962 511.962" width="16" height="10" style="enable-background:new 0 0 511.962 511.962;" xml:space="preserve">
+                        <g>
+                          <g>
+                            <path
+                              d="M507.399,370.471c-1.376-2.304-9.888-20.8-50.848-58.816c-42.88-39.808-37.12-33.344,14.528-102.176
+                         c31.456-41.92,44.032-67.52,40.096-78.464c-3.744-10.432-26.88-7.68-26.88-7.68l-76.928,0.448c0,0-5.696-0.768-9.952,1.76
+                         c-4.128,2.496-6.784,8.256-6.784,8.256s-12.192,32.448-28.448,60.032c-34.272,58.208-48,61.28-53.6,57.664
+                         c-13.024-8.416-9.76-33.856-9.76-51.904c0-56.416,8.544-79.936-16.672-86.016c-8.384-2.016-14.528-3.36-35.936-3.584
+                         c-27.456-0.288-50.72,0.096-63.872,6.528c-8.768,4.288-15.52,13.856-11.392,14.4c5.088,0.672,16.608,3.104,22.72,11.424
+                         c7.904,10.72,7.616,34.848,7.616,34.848s4.544,66.4-10.592,74.656c-10.4,5.664-24.64-5.888-55.2-58.72
+                         c-15.648-27.04-27.488-56.96-27.488-56.96s-2.272-5.568-6.336-8.544c-4.928-3.616-11.84-4.768-11.84-4.768l-73.152,0.448
+                         c0,0-10.976,0.32-15.008,5.088c-3.584,4.256-0.288,13.024-0.288,13.024s57.28,133.984,122.112,201.536
+                         c59.488,61.92,127.008,57.856,127.008,57.856h30.592c0,0,9.248-1.024,13.952-6.112c4.352-4.672,4.192-13.44,4.192-13.44
+                         s-0.608-41.056,18.464-47.104c18.784-5.952,42.912,39.68,68.48,57.248c19.328,13.28,34.016,10.368,34.016,10.368l68.384-0.96
+                         C488.583,400.807,524.359,398.599,507.399,370.471z"
+                            />
+                          </g>
+                        </g>
+                      </svg>
+                    </a>
                   </li>
                   <li class="social-media__item">
-                    <a class="social-media__link" href="#">Twitter</a>
+                    <a class="social-media__link social-media__link--tw" href="#">
+                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" width="16" height="10" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                        <g>
+                          <g>
+                            <path
+                              d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+			c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+			c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+			c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+			c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+			c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+			C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+			C480.224,136.96,497.728,118.496,512,97.248z"
+                            />
+                          </g>
+                        </g>
+                      </svg>
+                    </a>
                   </li>
                 </ul>
               </div>
             </li>
           </ul>
-          <div class="team__controls">
-            <span class="team__controls-button button button-back">Назад</span>
-            <span class="team__controls-button button button-next">Вперед</span>
+          <div class="instructors__controls instructors__controls--left">
+            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 240.835 240.835" width="30" height="30" style="enable-background:new 0 0 240.835 240.835;" xml:space="preserve">
+              <g>
+                <path
+                  id="Expand_Less"
+                  d="M129.007,57.819c-4.68-4.68-12.499-4.68-17.191,0L3.555,165.803c-4.74,4.74-4.74,12.427,0,17.155
+  c4.74,4.74,12.439,4.74,17.179,0l99.683-99.406l99.671,99.418c4.752,4.74,12.439,4.74,17.191,0c4.74-4.74,4.74-12.427,0-17.155
+  L129.007,57.819z"
+                />
+              </g>
+            </svg>
+          </div>
+          <div class="instructors__controls instructors__controls--right">
+            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 240.835 240.835" width="30" height="30" style="enable-background:new 0 0 240.835 240.835;" xml:space="preserve">
+              <g>
+                <path
+                  id="Expand_Less"
+                  d="M129.007,57.819c-4.68-4.68-12.499-4.68-17.191,0L3.555,165.803c-4.74,4.74-4.74,12.427,0,17.155
+  c4.74,4.74,12.439,4.74,17.179,0l99.683-99.406l99.671,99.418c4.752,4.74,12.439,4.74,17.191,0c4.74-4.74,4.74-12.427,0-17.155
+  L129.007,57.819z"
+                />
+              </g>
+            </svg>
           </div>
         </div>
         <div class="team__description instructor">
@@ -269,32 +412,97 @@
         </div>
       </section>
       <section class="reviews">
-        <h3 class="reviews__title page-title">Отзывы</h3>
+        <h2 class="reviews__title page-title">Отзывы</h2>
         <div class="reviews__container feedback">
+          <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="55px" height="45px" viewBox="0 0 95.333 95.332" style="enable-background:new 0 0 95.333 95.332;" xml:space="preserve">
+            <g>
+              <g>
+                <path
+                  d="M30.512,43.939c-2.348-0.676-4.696-1.019-6.98-1.019c-3.527,0-6.47,0.806-8.752,1.793
+    c2.2-8.054,7.485-21.951,18.013-23.516c0.975-0.145,1.774-0.85,2.04-1.799l2.301-8.23c0.194-0.696,0.079-1.441-0.318-2.045
+    s-1.035-1.007-1.75-1.105c-0.777-0.106-1.569-0.16-2.354-0.16c-12.637,0-25.152,13.19-30.433,32.076
+    c-3.1,11.08-4.009,27.738,3.627,38.223c4.273,5.867,10.507,9,18.529,9.313c0.033,0.001,0.065,0.002,0.098,0.002
+    c9.898,0,18.675-6.666,21.345-16.209c1.595-5.705,0.874-11.688-2.032-16.851C40.971,49.307,36.236,45.586,30.512,43.939z"
+                />
+                <path
+                  d="M92.471,54.413c-2.875-5.106-7.61-8.827-13.334-10.474c-2.348-0.676-4.696-1.019-6.979-1.019
+    c-3.527,0-6.471,0.806-8.753,1.793c2.2-8.054,7.485-21.951,18.014-23.516c0.975-0.145,1.773-0.85,2.04-1.799l2.301-8.23
+    c0.194-0.696,0.079-1.441-0.318-2.045c-0.396-0.604-1.034-1.007-1.75-1.105c-0.776-0.106-1.568-0.16-2.354-0.16
+    c-12.637,0-25.152,13.19-30.434,32.076c-3.099,11.08-4.008,27.738,3.629,38.225c4.272,5.866,10.507,9,18.528,9.312
+    c0.033,0.001,0.065,0.002,0.099,0.002c9.897,0,18.675-6.666,21.345-16.209C96.098,65.559,95.376,59.575,92.471,54.413z"
+                />
+              </g>
+            </g>
+          </svg>
           <p class="review__about">
-            Хожу на йогу вечером, чтобы расслабиться после тяжелого трудового дня. И после занятий наступает спокойствие! Йога это отличный способ быстро и качественно расслабиться. Спасибо инструктору Марине.
+            Хожу на йогу вечером, чтобы расслабиться после тяжелого трудового дня. И после занятий наступает спокойствие!
           </p>
-          <a href="#">
-            <img class="review__picture" src="assets/img/instructors/instructor-6.png" width="52" height="51" alt="Ревьюер" />
-          </a>
-          <p class="review__author">Серёжа Попов</p>
-          <p class="review__date">16 мая 2018</p>
+          <p class="review__about">
+            Йога это отличный способ быстро и качественно расслабиться. Спасибо инструктору Марине.
+          </p>
+          <div class="review__author">
+            <a href="#">
+              <img class="review__picture" src="assets/img/instructors/instructor-6.png" width="52" height="51" alt="Ревьюер" />
+            </a>
+            <div class="review__author-date">
+              <p class="review__author-name">Серёжа Попов</p>
+              <p class="review__date">16 мая 2018</p>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="25" height="25">
+                <g id="flat">
+                  <path d="M32.083,12S55.171,29.858,32,50.292C32,50.292,10.457,34.005,32.083,12Z" style="fill:#844aa8" />
+                  <path d="M52,21.292s-16.758,4.162-20,18.58c-3.242-14.418-20-18.58-20-18.58-4.727,27.493,20,29,20,29S56.727,48.785,52,21.292Z" style="fill:#d8c7de" />
+                  <path d="M3,39.292s22.9-5.4,29,11C32,50.292,10.74,58.675,3,39.292Z" style="fill:#a071a9" />
+                  <path d="M61,39.292s-22.9-5.4-29,11C32,50.292,53.26,58.675,61,39.292Z" style="fill:#a071a9" />
+                  <rect x="31" y="18.292" width="2" height="2" style="fill:#d8c7de" />
+                  <rect x="31" y="22.292" width="2" height="2" style="fill:#d8c7de" />
+                  <rect x="31" y="26.292" width="2" height="2" style="fill:#d8c7de" />
+                  <path d="M16.168,33.847A15.238,15.238,0,0,1,14,26.292h2a13.4,13.4,0,0,0,1.832,6.446Z" style="fill:#a071a9" />
+                  <path d="M47.832,33.847l-1.664-1.11A13.31,13.31,0,0,0,48,26.292h2A15.238,15.238,0,0,1,47.832,33.847Z" style="fill:#a071a9" />
+                </g>
+              </svg>
+            </div>
+          </div>
         </div>
         <div class="reviews__controls">
-          <span class="button button-back">Назад</span>
+          <div class="reviews__buttons reviews__buttons--back">
+            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 240.835 240.835" width="20" height="20" style="enable-background:new 0 0 240.835 240.835;" xml:space="preserve">
+              <g>
+                <path
+                  id="Expand_Less"
+                  d="M129.007,57.819c-4.68-4.68-12.499-4.68-17.191,0L3.555,165.803c-4.74,4.74-4.74,12.427,0,17.155
+  c4.74,4.74,12.439,4.74,17.179,0l99.683-99.406l99.671,99.418c4.752,4.74,12.439,4.74,17.191,0c4.74-4.74,4.74-12.427,0-17.155
+  L129.007,57.819z"
+                />
+              </g>
+            </svg>
+          </div>
           <span>1 / 9</span>
-          <span class="button button-next">Вперед</span>
+          <div class="reviews__buttons reviews__buttons--next">
+            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 240.835 240.835" width="20" height="20" style="enable-background:new 0 0 240.835 240.835;" xml:space="preserve">
+              <g>
+                <path
+                  id="Expand_Less"
+                  d="M129.007,57.819c-4.68-4.68-12.499-4.68-17.191,0L3.555,165.803c-4.74,4.74-4.74,12.427,0,17.155
+  c4.74,4.74,12.439,4.74,17.179,0l99.683-99.406l99.671,99.418c4.752,4.74,12.439,4.74,17.191,0c4.74-4.74,4.74-12.427,0-17.155
+  L129.007,57.819z"
+                />
+              </g>
+            </svg>
+          </div>
         </div>
       </section>
     </main>
     <footer class="page-footer">
       <form class="page-footer__form form-request" action="https://google.ru" method="POST">
-        <h2 class="form-request__title page-title">Запишитесь на бесплатное пробное занятие</h2>
-        <input id="name" class="form-request__input input-name" name="name" type="text" placeholder="Ваше имя" />
-        <input id="phone" class="form-request__input input-phone" name="phone" type="text" placeholder="Ваш телефон" />
-        <button class="form-request__button button" type="submit">Оставить заявку</button>
+        <div class="form-request__wrapper">
+          <h2 class="form-request__title page-title">Запишитесь на бесплатное пробное занятие</h2>
+          <input id="name" class="form-request__input input-name" name="name" type="text" placeholder="Ваше имя" />
+          <input id="phone" class="form-request__input input-phone" name="phone" type="text" placeholder="Ваш телефон" />
+          <button class="form-request__button button" type="submit">Оставить заявку</button>
+        </div>
       </form>
       <h2 class="visually-hidden">Контакты</h2>
+      <div class="page-footer__wrapper">
       <ul class="page-footer__contacts contacts">
         <li class="contacts__item">
           <p class="contacts__label">
@@ -331,21 +539,65 @@
       </ul>
       <ul class="social-media">
         <li class="social-media__item">
-          <a class="social-media__link" href="#">VK</a>
+          <a class="social-media__link" href="#">
+            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 511.962 511.962" width="25px" height="15px" style="enable-background:new 0 0 511.962 511.962;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M507.399,370.471c-1.376-2.304-9.888-20.8-50.848-58.816c-42.88-39.808-37.12-33.344,14.528-102.176
+			c31.456-41.92,44.032-67.52,40.096-78.464c-3.744-10.432-26.88-7.68-26.88-7.68l-76.928,0.448c0,0-5.696-0.768-9.952,1.76
+			c-4.128,2.496-6.784,8.256-6.784,8.256s-12.192,32.448-28.448,60.032c-34.272,58.208-48,61.28-53.6,57.664
+			c-13.024-8.416-9.76-33.856-9.76-51.904c0-56.416,8.544-79.936-16.672-86.016c-8.384-2.016-14.528-3.36-35.936-3.584
+			c-27.456-0.288-50.72,0.096-63.872,6.528c-8.768,4.288-15.52,13.856-11.392,14.4c5.088,0.672,16.608,3.104,22.72,11.424
+			c7.904,10.72,7.616,34.848,7.616,34.848s4.544,66.4-10.592,74.656c-10.4,5.664-24.64-5.888-55.2-58.72
+			c-15.648-27.04-27.488-56.96-27.488-56.96s-2.272-5.568-6.336-8.544c-4.928-3.616-11.84-4.768-11.84-4.768l-73.152,0.448
+			c0,0-10.976,0.32-15.008,5.088c-3.584,4.256-0.288,13.024-0.288,13.024s57.28,133.984,122.112,201.536
+			c59.488,61.92,127.008,57.856,127.008,57.856h30.592c0,0,9.248-1.024,13.952-6.112c4.352-4.672,4.192-13.44,4.192-13.44
+			s-0.608-41.056,18.464-47.104c18.784-5.952,42.912,39.68,68.48,57.248c19.328,13.28,34.016,10.368,34.016,10.368l68.384-0.96
+			C488.583,400.807,524.359,398.599,507.399,370.471z"/>
+	</g>
+</g>
+</svg>
+          </a>
         </li>
         <li class="social-media__item">
-          <a class="social-media__link" href="#">Twitter</a>
+          <a class="social-media__link" href="#">
+            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" width="25px" height="15px" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+			c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+			c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+			c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+			c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+			c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+			C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+			C480.224,136.96,497.728,118.496,512,97.248z"/>
+	</g>
+</g>
+</svg>
+          </a>
         </li>
         <li class="social-media__item">
-          <a class="social-media__link" href="#">Facebook</a>
+          <a class="social-media__link" href="#">
+            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" width="25px" height="15px" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M288,176v-64c0-17.664,14.336-32,32-32h32V0h-64c-53.024,0-96,42.976-96,96v80h-64v80h64v256h96V256h64l32-80H288z"/>
+	</g>
+</svg>
+          </a>
         </li>
       </ul>
-      <div class="page-footer__copyright copyright">
-        <p class="copyright__text">
+      <div class="page-footer__copyright">
+        <p>
           © 2018 Все права защищены
         </p>
-        <a class="copyright__link" href="#">Yogaspb.com</a>
+        <a href="#">Yogaspb.com</a>
       </div>
+    </div>
     </footer>
   </body>
 </html>

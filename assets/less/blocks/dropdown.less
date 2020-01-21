@@ -1,16 +1,16 @@
-.dropdown a {
-  color: #8e80a9;
-}
-
-.dropdown a:hover,
-.dropdown a:focus {
-  color: #660066;
-}
-
 .dropdown {
   display: none;
   position: absolute;
   padding-top: 5px;
   z-index: 1;
   text-align: left;
+
+  a {
+    color: @secondary;
+
+    &:hover,
+    &:focus {
+      color: #660066;
+    }
+  }
 }
