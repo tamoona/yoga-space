@@ -26,6 +26,7 @@ gulp.task("server", function() {
   });
 
   gulp.watch("assets/less/**/*.less", gulp.series("css", "refresh"));
+  gulp.watch("assets/js/**/*.js", gulp.series("copy:js", "refresh"));
   gulp.watch("*.html", gulp.series("copy:html", "refresh"));
 });
 
@@ -56,9 +57,17 @@ gulp.task("copy:assets", function() {
     .pipe(gulp.dest("build/assets"));
 });
 
+gulp.task("copy:js", function() {
+  return gulp
+    .src("assets/js/*", {
+      base: "assets"
+    })
+    .pipe(gulp.dest("build/assets"));
+});
+
 gulp.task("clean", function() {
   return del("build");
 });
 
-gulp.task("build", gulp.series("clean", "copy:assets", "css", "copy:html"));
+gulp.task("build", gulp.series("clean", "copy:assets", "copy:js", "css", "copy:html"));
 gulp.task("start", gulp.series("build", "server"));
