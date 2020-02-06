@@ -26,6 +26,7 @@
 
 .types__item {
   margin: 0 0 30px 0;
+  box-shadow: 0px 4px 25px rgba(142, 128, 169, 0.2);
 
   &:last-child {
     margin-bottom: 0;
@@ -83,18 +84,26 @@
 }
 
 .types__button-all {
+  display: none;
   color: @secondary;
 }
 
 @media (min-width: @tablet-width) {
   .types {
     margin-top: 91px;
+    margin-bottom: 98px;
     background-image: url("../img/tablet/big-pattern-tablet@1x.png");
+    background-repeat: no-repeat;
+    flex-wrap: wrap;
     padding: 0;
   }
 
   .types__column {
     padding: 0 15px;
+  }
+
+  .types__content {
+    padding-right: 0;
   }
 
   .types__column:first-child {
@@ -125,8 +134,10 @@
     }
 
     .types__button-more {
-      width: 20px;
-      height: 30px;
+      width: 33px;
+      height: 17px;
+      margin-top: 83px;
+      margin-right: 20px;
     }
   }
 
@@ -140,6 +151,16 @@
   }
 
   .types__item {
-    margin: 0 0 21px;
+    margin: 0 0 19px;
+  }
+
+  .types__button-all {
+    display: block;
+    text-align: center;
+    background-color: #ffffff;
+    font-size: 10px;
+    line-height: 20px;
+    padding: 6px;
+    box-shadow: 0px 4px 25px rgba(142, 128, 169, 0.2);
   }
 }
