@@ -11,11 +11,16 @@
 }
 
 .reviews__container {
+  display: none;
   background-color: #fff;
   width: 100%;
   padding: 17px 15px 16px 15px;
   margin-top: 15px;
   box-shadow: 0px 4px 25px rgba(142, 128, 169, 0.2);
+
+  &--full {
+    display: block;
+  }
 
   svg {
     fill: rgba(139, 126, 172, 0.45);
@@ -73,5 +78,26 @@
     svg {
       transform: rotate(90deg);
     }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .reviews {
+    background-image: url("../img/tablet/clouds-membership-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 47px;
+    padding-bottom: 62px;
+    padding-left: 198px;
+    padding-right: 198px;
+  }
+
+  .reviews__container {
+    display: block;
+    padding: 23px 55px 16px 108px;
+  }
+
+  .reviews__controls {
+    margin: 34px auto 37px;
   }
 }
