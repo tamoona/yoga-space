@@ -17,3 +17,32 @@
   margin: 0;
   margin-top: 3px;
 }
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .contacts__item {
+    width: 50%;
+    margin-bottom: 36px;
+
+    &--address {
+      order: 1;
+    }
+
+    &--schedule {
+      order: 3;
+    }
+
+    &--phone {
+      order: 2;
+    }
+
+    &--email {
+      order: 4;
+    }
+  }
+}
