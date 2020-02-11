@@ -164,3 +164,76 @@
     box-shadow: 0px 4px 25px rgba(142, 128, 169, 0.2);
   }
 }
+
+@media (min-width: @desktop-width) {
+  .types {
+    margin: 0 auto;
+    max-width: 80%;
+    margin-top: 146px;
+    margin-bottom: 142px;
+    background-image: url("../img/desktop/background-pattern-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position-x: 48%;
+    background-position-y: 43%;
+  }
+
+  .types__list {
+    padding: 0 110px;
+  }
+
+  .types__title {
+    margin-bottom: 74px;
+  }
+
+  .types__column:first-child {
+    .types__image-wrapper {
+      height: 311px;
+      width: 366px;
+    }
+  }
+
+  .types__column:last-child {
+    .types__image-wrapper {
+      width: 220px;
+      height: 180px;
+    }
+
+    .types__wrapper {
+      // min-width: 305px;
+      // min-height: 180px;
+    }
+
+    .types__button-more {
+      width: 41px;
+      height: 29px;
+      margin-top: 114px;
+      margin-right: 43px;
+      margin-left: 29px;
+    }
+  }
+
+  .types__subtitle {
+    font-size: 16px;
+    line-height: 15px;
+  }
+
+  .types__content {
+    padding-left: 25px;
+    padding-top: 32px;
+
+    p {
+      font-size: 12px;
+      line-height: 20px;
+    }
+  }
+
+  .types__instructor {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .types__button-all {
+    font-size: 15px;
+    padding: 30px;
+  }
+}
