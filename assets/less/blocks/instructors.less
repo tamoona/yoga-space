@@ -176,3 +176,58 @@
     top: 155px;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .instructors__list {
+    padding: 0 65px;
+  }
+
+  .instructors__wrapper {
+    margin: 0 47px 0 0;
+  }
+
+  .instructors__img-wrapper {
+    width: 580px;
+    height: 700px;
+  }
+
+  .instructors__about {
+    font-size: 17px;
+    line-height: 20px;
+    margin-top: 35px;
+  }
+
+  .instructors__name {
+    font-size: 15px;
+    line-height: 15px;
+  }
+
+  .instructors__exp {
+    font-size: 13px;
+  }
+
+  .instructors__description {
+    padding-top: 41px;
+  }
+
+  .instructors__controls {
+    padding: 0;
+    border: none;
+    top: 348px;
+
+    svg {
+      width: 50px;
+      height: 50px;
+    }
+
+    &--right {
+      fill: @secondary;
+      background-color: inherit;
+      right: -77px;
+    }
+
+    &--left {
+      left: -77px;
+    }
+  }
+}
