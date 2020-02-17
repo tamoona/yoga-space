@@ -1,6 +1,4 @@
 .reviews {
-  display: flex;
-  flex-wrap: wrap;
   padding-left: 35px;
   padding-right: 35px;
 }
@@ -99,5 +97,70 @@
 
   .reviews__controls {
     margin: 34px auto 37px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews {
+    padding: 147px 198px 127px;
+    background-image: url("../img/desktop/clouds-membership-desktop@1x.png");
+    background-position: 50% 41%;
+  }
+
+  .reviews__title {
+    margin-bottom: 50px;
+  }
+
+  .reviews__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    // padding: 0 133px;
+    max-width: 778px;
+    margin: 0 auto;
+  }
+
+  .reviews__container {
+    width: 49%;
+    padding: 25px 49px 16px 80px;
+  }
+
+  .review__about,
+  .review__author-name {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .review__author-date {
+    line-height: 20px;
+  }
+
+  .reviews__controls {
+    margin: 0;
+    width: 100%;
+    position: absolute;
+
+    span {
+      display: none;
+    }
+  }
+
+  .reviews__buttons {
+    position: absolute;
+    top: 177px;
+    svg {
+      width: @iconSize;
+      height: @iconSize;
+      margin-top: 3px;
+    }
+
+    &--next {
+      right: -25px;
+    }
+
+    &--back {
+      left: -25px;
+    }
   }
 }

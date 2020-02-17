@@ -73,3 +73,51 @@
     }
   }
 }
+
+@media (min-width: @desktop-width) {
+  .page-footer__copyright {
+    background-color: #8373a1;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    a {
+      padding-left: 166px;
+    }
+
+    p {
+      padding-right: 26px;
+    }
+  }
+
+  .page-footer {
+    background-image: url("../img/desktop/yoga-futer-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .page-footer__full {
+    display: flex;
+    width: 100%;
+  }
+
+  .page-footer__form {
+    background-image: none;
+    width: 50%;
+    order: 2;
+    padding: 70px 159px 70px 0;
+  }
+
+  .page-footer__wrapper {
+    width: 50%;
+    color: @secondary;
+    order: 1;
+    padding-top: 201px;
+    padding-left: 257px;
+  }
+
+  .page-footer__contacts {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
