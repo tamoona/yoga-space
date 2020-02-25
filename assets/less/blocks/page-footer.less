@@ -2,7 +2,7 @@
   background-image: url("../img/mobile/yoga-futer-mobile@1x.png");
   background-position: top center;
   background-repeat: no-repeat;
-  padding: 70px 11px 70px 35px;
+  padding: 70px 35px;
   width: 100%;
   background-size: cover;
 }
@@ -27,14 +27,19 @@
   }
 }
 
+.page-footer__copyright-wrapper {
+  padding-left: 36px;
+  padding-bottom: 20px;
+}
+
 .page-footer__copyright,
 .page-footer__copyright a {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.page-footer__wrapper {
+.page-footer__content {
   display: block;
-  padding-left: 25px;
+  padding-left: 36px;
   padding-bottom: 33px;
   padding-top: 29px;
 }
@@ -53,15 +58,17 @@
     padding: 70px 106px 94px 106px;
   }
 
-  .page-footer__wrapper {
-    padding-left: 65px;
-    padding-bottom: 68px;
-    padding-top: 65px;
+  .page-footer__content {
+    .content-wrapper();
+  }
+
+  .page-footer__copyright-wrapper {
+    display: flex;
+    width: 100%;
+    .content-wrapper();
   }
 
   .page-footer__copyright {
-    display: flex;
-
     p {
       width: 50%;
     }
@@ -81,12 +88,13 @@
     padding-top: 15px;
     padding-bottom: 15px;
 
-    a {
-      padding-left: 166px;
-    }
-
     p {
       padding-right: 26px;
+      text-align: left;
+    }
+
+    a {
+      text-align: right;
     }
   }
 
@@ -96,24 +104,24 @@
     background-size: cover;
   }
 
-  .page-footer__full {
+  .page-footer__wrapper {
     display: flex;
     width: 100%;
+    .content-wrapper();
   }
 
   .page-footer__form {
     background-image: none;
     width: 50%;
     order: 2;
-    padding: 70px 159px 70px 0;
+    padding: 70px 0;
   }
 
-  .page-footer__wrapper {
+  .page-footer__content {
     width: 50%;
     color: @secondary;
     order: 1;
     padding-top: 201px;
-    padding-left: 257px;
   }
 
   .page-footer__contacts {

@@ -2,3 +2,13 @@
   list-style: none;
   padding-left: 0;
 }
+
+.content-wrapper() {
+  max-width: 630px;
+  margin: 0 auto;
+
+  @media (min-width: @desktop-width) {
+    max-width: 925px;
+    margin: 0 auto;
+  }
+}

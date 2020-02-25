@@ -94,6 +94,7 @@
   .membership {
     padding-left: 60px;
     padding-right: 60px;
+    padding-bottom: 149px;
     background-image: url("../img/tablet/clouds-membership-tablet@1x.png");
     background-position: 0 37%;
     background-repeat: no-repeat;
@@ -115,6 +116,7 @@
 
   .membership__types {
     display: flex;
+    .content-wrapper();
   }
 
   .membership__type {
@@ -130,6 +132,7 @@
 
       .membership__button {
         display: block;
+        padding: 9px;
       }
     }
   }
@@ -157,9 +160,19 @@
 
   .membership__type {
     margin-right: 51px;
-    padding: 91px 54px 91px 54px;
+    padding: 61px 54px;
+
     &:last-child {
       margin-bottom: 85px;
+    }
+
+    &:nth-child(2) {
+      .membership__button {
+        font-size: 13px;
+        line-height: 20px;
+        margin-top: 40px;
+        padding: 17px 13px;
+      }
     }
 
     &:first-child {
@@ -174,7 +187,7 @@
   }
 
   .membership__types {
-    padding: 0 133px 0 133px;
+    padding: 0;
   }
 
   .membership__subtitle {
@@ -185,12 +198,5 @@
   .membership__price {
     font-size: 30px;
     line-height: 20px;
-  }
-
-  .membership__button {
-    font-size: 13px;
-    line-height: 20px;
-    margin-top: 40px;
-    padding: 17px 13px;
   }
 }

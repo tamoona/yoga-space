@@ -16,21 +16,23 @@
   text-decoration: underline;
   padding-bottom: 10px;
   padding-top: 20px;
+  width: 100%;
 }
 
 .form-request__button {
   display: block;
   font-size: 14px;
   line-height: 20px;
-  margin: 35px 31px 0 35px;
-  padding: 17px 39px;
+  width: 100%;
+  margin-top: 35px;
+  padding: 17px 0;
   background-color: @primary;
 }
 
 @media (min-width: @tablet-width) {
   .form-request__wrapper {
     display: block;
-    padding: 0 70px;
+    padding: 0 59px;
 
     .form-request__title {
       font-size: 30px;
@@ -47,7 +49,19 @@
   }
 
   .form-request__button {
-    margin: 62px auto 0;
-    padding: 23px 150px;
+    margin-top: 62px;
+    padding: 23px 0;
+  }
+}
+
+@media (min-width: @laptop-width) {
+  .form-request__wrapper {
+    padding: 0 178px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-request__wrapper {
+    padding: 0;
   }
 }

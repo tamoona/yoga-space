@@ -2,7 +2,6 @@
   background-image: url("../img/mobile/pattern-big.png");
   background-position: 0 2px;
   background-repeat: no-repeat;
-  display: flex;
   flex-wrap: wrap;
   padding-left: 45px;
   padding-right: 45px;
@@ -19,14 +18,19 @@
   }
 }
 
+@media (min-width: @laptop-width) {
+  .team {
+    background-image: none;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .team {
     background-image: url("../img/desktop/big-pattern-desktop@1x.png"), url("../img/desktop/small-pattern-desktop@1x.png");
     background-repeat: no-repeat, no-repeat;
     background-size: contain;
     background-position: left, right;
-    padding-left: 193px;
-    padding-right: 193px;
+    padding: 0;
   }
 
   .team__title {
